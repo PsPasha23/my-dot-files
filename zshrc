@@ -121,7 +121,7 @@ source <(kubectl completion zsh)
 source /Users/mac/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export GO_PATH=~/go
 export PATH=$PATH:/$GO_PATH/bin
-export GOPRIVATE=github.com/ZscalerCWP/*
+export GOPRIVATE=github.com/Stealth-SaaS/*
 export DOCKER_DEFAULT_PLATFORM=linux/amd64
 
 export WORK_DIR=/Users/mac/workspace
