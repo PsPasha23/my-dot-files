@@ -4,7 +4,7 @@
 export LC_ALL=en_US.UTF-8 export LANG=en_US.UTF-8
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/jeevanragula/.oh-my-zsh"
+export ZSH="/Users/mac/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -118,13 +118,13 @@ function kubectl() { command kubectl $@; }
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
 source <(kubectl completion zsh)
-source /Users/jeevanragula/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /Users/mac/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export GO_PATH=~/go
 export PATH=$PATH:/$GO_PATH/bin
 export GOPRIVATE=github.com/ZscalerCWP/*
 export DOCKER_DEFAULT_PLATFORM=linux/amd64
 
-export WORK_DIR=/Users/jeevanragula/workspace
+export WORK_DIR=/Users/mac/workspace
 
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 
@@ -141,8 +141,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/jeevanragula/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/jeevanragula/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/mac/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/mac/Downloads/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/jeevanragula/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jeevanragula/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '/Users/mac/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/mac/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 complete -F __start_kubectl k
